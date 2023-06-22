@@ -10,7 +10,7 @@ async function main() {
     const client = new xrpl.Client("wss://s.altnet.rippletest.net:51233")
     await client.connect()
 
-    const test_wallet = xrpl.Wallet.fromSeed("sEd7Q1yv1GeVvw2c6Qp5Z3HCVZdYry6") // Test secret; don't use for real
+    const test_wallet = xrpl.Wallet.fromSeed("sEdSQByqTJ4LcrWZ7kN3Y7hECMYLs9Z") // Test secret; don't use for real
 
   // Get info from the ledger about the address we just funded
   const response = await client.request({
